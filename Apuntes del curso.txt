@@ -1,0 +1,46 @@
+Xmlhttprequest:  Objeto que esta dentro de JS que permite hacer peticiones hacia algun servicio
+
+
+Instalamos xmlhttprequest con --> npm install xmlhttprequest --save (el sabe lo ponemos porque la instalaremos como dependencia de desarrollo)
+
+
+Promesas: Utilizan el objeto promise para ser ejecutadas. (Algo va a suceder)
+
+
+Promesas encadenas: usaremos un metodo que  esta disponible Promise.all([promise1], [promise2])
+
+Async y Await: Es preferible sobre las promesas, porque hace que nuestro codigo se comporte sincrono
+
+
+Convencion: Si algo nunca se va a mover y nunca va a cambiar lo establecemos con MAYUSCULAS
+
+Los callbacks son universales significa que corren en cualquien navegador
+
+Callback hell: Anidar y anidar callbacks
+
+LAs promesas requieren un polify para funcionar en cualquier navegador como babel
+
+Async await tambien necesita un polify para funcionar
+
+Ventajas y Desventajas
+
+Callbacks
+V = Es simple una función que recibe otra función
+V = Son universales
+D = Composición tosca
+D = Callbacks Hell
+D = Flujo poco intuitivo
+D = Debemos pensar que estamos haciendo código para humanos y debe ser facil de leer
+D = if FecthData, if FecthData, if FecthData y se vuelve tedioso y no se maneja excepciones
+
+Promise
+V = Fácilmente enlazable then y return, then y return y asi
+V = Es poderoso // es muy recomendado para desarrolladores
+D = NO maneja excepciones si no maneja un catch al final y seremos propensos a errores
+D = Requiere un polyfile para ser transpilados y ser interpretados en todos los navegadores //Babbel
+
+Async Await
+V = El tradicional try - catch y manejar las excepciones de manera mas fluida
+V = Mas fáciles de leer que sucedera que va a suceder
+D = Ese poder que podemos decir es decir si queremos algo debemos esperar que algo suceda
+D = Requiere un polyfile para ser transpilados y ser interpretados en todos los navegadores //Babbel
